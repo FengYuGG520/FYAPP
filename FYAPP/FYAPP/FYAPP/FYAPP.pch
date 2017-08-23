@@ -1,0 +1,18 @@
+//
+//  FYAPP.pch
+//  FYAPP
+//
+//  Created by 夜枫宇 on 2014/8/22.
+//  Copyright © 2014年 fengyu. All rights reserved.
+//
+
+/// Build Settings -> Prefix Heard -> FYAPPTest/FYAPP/FYAPP.pch
+
+#ifndef FYAPP_pch
+#define FYAPP_pch
+
+#if __OBJC__
+#import "FYAPP.h"
+#endif
+
+#endif
