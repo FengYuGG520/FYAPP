@@ -13,10 +13,10 @@ typedef dispatch_queue_t fy_gcd_queue;
 typedef dispatch_group_t fy_gcd_group;
 
 typedef enum {
-    FY_Queue_Main = 0,  // 主队列     (串行)(在主线程里需要加入异步队列, 主线程空闲调用)
-    FY_Queue_Serial,    // 串行
-    FY_Queue_Global,    // 全局队列    (并行)(日常开发中, 建议用)
-    FY_Queue_Concurrent // 并行       (开发第三方框架的时候, 建议用)
+    FY_Queue_Main = 0,  // 在主队列     (串行)(在主线程里需要加入异步队列, 主线程空闲调用)
+    FY_Queue_Serial,    // 串行队列
+    FY_Queue_Global,    // 全局队列     (并行)(日常开发中, 建议用)
+    FY_Queue_Concurrent // 并行队列     (开发第三方框架的时候, 建议用)
 } FY_Queue;
 
 typedef enum {
