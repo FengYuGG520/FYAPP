@@ -217,6 +217,9 @@
 		126D39BF1F4E584D002A9315 /* UIGestureRecognizer+FYGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 126D38ED1F4E584D002A9315 /* UIGestureRecognizer+FYGestureRecognizer.m */; };
 		126D39C01F4E584D002A9315 /* UIGestureRecognizer+FYGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 126D38ED1F4E584D002A9315 /* UIGestureRecognizer+FYGestureRecognizer.m */; };
 		126D39C11F4E584D002A9315 /* UIGestureRecognizer+FYGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 126D38ED1F4E584D002A9315 /* UIGestureRecognizer+FYGestureRecognizer.m */; };
+		12762F7E1F53AEE100708BDC /* FYBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12762F7D1F53AEE100708BDC /* FYBaseController.m */; };
+		12762F7F1F53AEE100708BDC /* FYBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12762F7D1F53AEE100708BDC /* FYBaseController.m */; };
+		12762F801F53AEE100708BDC /* FYBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 12762F7D1F53AEE100708BDC /* FYBaseController.m */; };
 		4A105D0F1A05E9C863041E92 /* libPods-FYAPPTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 584A160BC7A7832DFD64B4DD /* libPods-FYAPPTests.a */; };
 		840BB051E80AAFA48367960C /* libPods-FYAPPUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D250B77417A43A48F10761B /* libPods-FYAPPUITests.a */; };
 		964683748CD000714912AA83 /* libPods-FYAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D3CFD73B7732B43BED3E93 /* libPods-FYAPP.a */; };
@@ -386,6 +389,8 @@
 		126D38ED1F4E584D002A9315 /* UIGestureRecognizer+FYGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+FYGestureRecognizer.m"; sourceTree = "<group>"; };
 		126D38EE1F4E584D002A9315 /* FYAPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYAPP.h; sourceTree = "<group>"; };
 		126D38EF1F4E584D002A9315 /* FYAPP.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYAPP.pch; sourceTree = "<group>"; };
+		12762F7C1F53AEE100708BDC /* FYBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYBaseController.h; sourceTree = "<group>"; };
+		12762F7D1F53AEE100708BDC /* FYBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYBaseController.m; sourceTree = "<group>"; };
 		1BD829D2C364DCCB3DF6F3DF /* Pods-FYAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-FYAPP/Pods-FYAPP.release.xcconfig"; sourceTree = "<group>"; };
 		1D250B77417A43A48F10761B /* libPods-FYAPPUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FYAPPUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D6E642FFFA302FA30C0BB37 /* Pods-FYAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FYAPP/Pods-FYAPP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -786,6 +791,15 @@
 			path = FY_Visual;
 			sourceTree = "<group>";
 		};
+		12762F7B1F53AEAD00708BDC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				12762F7C1F53AEE100708BDC /* FYBaseController.h */,
+				12762F7D1F53AEE100708BDC /* FYBaseController.m */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
 		380CD29542CEFF0875334180 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -826,6 +840,7 @@
 				B06313D71F4C16EC003EC043 /* AppDelegate.m */,
 				B06313D91F4C16EC003EC043 /* ViewController.h */,
 				B06313DA1F4C16EC003EC043 /* ViewController.m */,
+				12762F7B1F53AEAD00708BDC /* Base */,
 				B06313DC1F4C16EC003EC043 /* Main.storyboard */,
 				B06313E21F4C16EC003EC043 /* Assets.xcassets */,
 				B06313E41F4C16EC003EC043 /* LaunchScreen.storyboard */,
@@ -1176,6 +1191,7 @@
 				126D39951F4E584D002A9315 /* UIImage+FYImage.m in Sources */,
 				126D39291F4E584D002A9315 /* FYAPPFeatureView.m in Sources */,
 				126D394A1F4E584D002A9315 /* NSObject+FYArray.m in Sources */,
+				12762F7E1F53AEE100708BDC /* FYBaseController.m in Sources */,
 				126D395C1F4E584D002A9315 /* Sundry.m in Sources */,
 				126D39AA1F4E584D002A9315 /* UIView+FYView.m in Sources */,
 				126D390E1F4E584D002A9315 /* UICollectionView+FYCollectionView.m in Sources */,
@@ -1266,6 +1282,7 @@
 				126D39841F4E584D002A9315 /* FYSingle.m in Sources */,
 				126D39481F4E584D002A9315 /* NSArray+FYArray.m in Sources */,
 				126D39571F4E584D002A9315 /* KVC.m in Sources */,
+				12762F7F1F53AEE100708BDC /* FYBaseController.m in Sources */,
 				126D39301F4E584D002A9315 /* FYAPPSliderController.m in Sources */,
 				126D39961F4E584D002A9315 /* UIImage+FYImage.m in Sources */,
 				126D39031F4E584D002A9315 /* NSArray+FYAdditions.m in Sources */,
@@ -1342,6 +1359,7 @@
 				126D39851F4E584D002A9315 /* FYSingle.m in Sources */,
 				126D39491F4E584D002A9315 /* NSArray+FYArray.m in Sources */,
 				126D39581F4E584D002A9315 /* KVC.m in Sources */,
+				12762F801F53AEE100708BDC /* FYBaseController.m in Sources */,
 				126D39311F4E584D002A9315 /* FYAPPSliderController.m in Sources */,
 				126D39971F4E584D002A9315 /* UIImage+FYImage.m in Sources */,
 				126D39041F4E584D002A9315 /* NSArray+FYAdditions.m in Sources */,
