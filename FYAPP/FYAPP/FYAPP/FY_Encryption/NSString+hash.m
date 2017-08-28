@@ -64,21 +64,21 @@
     return [self fy_strBytes:chs len:FY_MD5_LEN];
 }
 
-- (NSString *)cz_hmacSHA1WithKey:(NSString *)key {
+- (NSString *)fy_hmacSHA1WithKey:(NSString *)key {
     const char *keyData = key.UTF8String;
     const char *data = self.UTF8String;
     unsigned char chs[FY_SHA1_LEN];
     CCHmac(kCCHmacAlgSHA1, keyData, strlen(keyData), data, strlen(data), chs);
     return [self fy_strBytes:chs len:FY_SHA1_LEN];
 }
-- (NSString *)cz_hmacSHA256WithKey:(NSString *)key {
+- (NSString *)fy_hmacSHA256WithKey:(NSString *)key {
     const char *keyData = key.UTF8String;
     const char *data = self.UTF8String;
     unsigned char chs[FY_SHA256_LEN];
     CCHmac(kCCHmacAlgSHA256, keyData, strlen(keyData), data, strlen(data), chs);
     return [self fy_strBytes:chs len:FY_SHA256_LEN];
 }
-- (NSString *)cz_hmacSHA512WithKey:(NSString *)key {
+- (NSString *)fy_hmacSHA512WithKey:(NSString *)key {
     const char *keyData = key.UTF8String;
     const char *data = self.UTF8String;
     unsigned char chs[FY_SHA512_LEN];
@@ -86,7 +86,7 @@
     return [self fy_strBytes:chs len:FY_SHA512_LEN];
 }
 
-- (NSString *)cz_fileMD5Hash {
+- (NSString *)fy_fileMD5Hash {
     NSFileHandle *fp = [NSFileHandle fileHandleForReadingAtPath:self];
     if (!fp) return nil;
     CC_MD5_CTX hashCtx;
@@ -108,7 +108,7 @@
     
     return [self fy_strBytes:buffer len:FY_MD5_LEN];
 }
-- (NSString *)cz_fileSHA1Hash {
+- (NSString *)fy_fileSHA1Hash {
     NSFileHandle *fp = [NSFileHandle fileHandleForReadingAtPath:self];
     if (!fp) return nil;
     CC_SHA1_CTX hashCtx;
@@ -130,7 +130,7 @@
     
     return [self fy_strBytes:buffer len:FY_SHA1_LEN];
 }
-- (NSString *)cz_fileSHA256Hash {
+- (NSString *)fy_fileSHA256Hash {
     NSFileHandle *fp = [NSFileHandle fileHandleForReadingAtPath:self];
     if (!fp) return nil;
     CC_SHA256_CTX hashCtx;
@@ -152,7 +152,7 @@
     
     return [self fy_strBytes:buffer len:FY_SHA256_LEN];
 }
-- (NSString *)cz_fileSHA512Hash {
+- (NSString *)fy_fileSHA512Hash {
     NSFileHandle *fp = [NSFileHandle fileHandleForReadingAtPath:self];
     if (!fp) return nil;
     CC_SHA512_CTX hashCtx;

@@ -30,7 +30,7 @@
 #import "FY_Runtime/NSObject+Runtime.h"
 #import "FY_ScrollView/UIScrollView+FYScrollView.h"
 #import "FY_SQL/FYSQL.h"
-#import "FY_String/FYString.h"
+#import "FY_String/NSString+FYString.h"
 #import "FY_TabBar/FYTabBarController.h"
 #import "FY_TabBar/UITabBarController+FYTabBarController.h"
 #import "FY_TableView/UITableView+FYTableView.h"

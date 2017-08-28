@@ -1,14 +1,14 @@
 //
-//  FYString.m
+//  NSString+FYString.m
 //  FYAPP
 //
 //  Created by 夜枫宇 on 2014/8/22.
 //  Copyright © 2014年 fengyu. All rights reserved.
 //
 
-#import "FYString.h"
+#import "NSString+FYString.h"
 
-@implementation FYString
+@implementation NSString (FYString)
 
 - (NSURL *)fy_urlStr {
     return [NSURL URLWithString:self];

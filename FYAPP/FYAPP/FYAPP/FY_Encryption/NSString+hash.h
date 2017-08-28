@@ -72,7 +72,7 @@
  @param key key
  @return 40个字符的HMAC SHA1散列字符串
  */
-- (NSString *)cz_hmacSHA1WithKey:(NSString *)key;
+- (NSString *)fy_hmacSHA1WithKey:(NSString *)key;
 
 /**
  64个字符的HMAC SHA256散列字符串
@@ -80,7 +80,7 @@
  @param key key
  @return 64个字符的HMAC SHA256散列字符串
  */
-- (NSString *)cz_hmacSHA256WithKey:(NSString *)key;
+- (NSString *)fy_hmacSHA256WithKey:(NSString *)key;
 
 /**
  128个字符的HMAC SHA512散列字符串
@@ -88,34 +88,34 @@
  @param key key
  @return 128个字符的HMAC SHA512散列字符串
  */
-- (NSString *)cz_hmacSHA512WithKey:(NSString *)key;
+- (NSString *)fy_hmacSHA512WithKey:(NSString *)key;
 
 /**
  计算文件的MD5散列结果
 
  @return 32个字符的MD5散列字符串
  */
-- (NSString *)cz_fileMD5Hash;
+- (NSString *)fy_fileMD5Hash;
 
 /**
  计算文件的SHA1散列结果
 
  @return 40个字符的SHA1散列字符串
  */
-- (NSString *)cz_fileSHA1Hash;
+- (NSString *)fy_fileSHA1Hash;
 
 /**
  计算文件的SHA256散列结果
 
  @return 64个字符的SHA256散列字符串
  */
-- (NSString *)cz_fileSHA256Hash;
+- (NSString *)fy_fileSHA256Hash;
 
 /**
  计算文件的SHA512散列结果
 
  @return 128个字符的SHA512散列字符串
  */
-- (NSString *)cz_fileSHA512Hash;
+- (NSString *)fy_fileSHA512Hash;
 
 @end

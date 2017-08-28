@@ -16,7 +16,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIButton *btn = [UIButton new];
     
+    [btn setExclusiveTouch:YES];
 }
 
 

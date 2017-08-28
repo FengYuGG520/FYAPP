@@ -130,9 +130,9 @@
 		126D39681F4E584D002A9315 /* FYSQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 126D38A91F4E584C002A9315 /* FYSQL.m */; };
 		126D39691F4E584D002A9315 /* FYSQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 126D38A91F4E584C002A9315 /* FYSQL.m */; };
 		126D396A1F4E584D002A9315 /* FYSQL.m in Sources */ = {isa = PBXBuildFile; fileRef = 126D38A91F4E584C002A9315 /* FYSQL.m */; };
-		126D396B1F4E584D002A9315 /* FYString.m in Sources */ = {isa = PBXBuildFile; fileRef = 126D38AC1F4E584C002A9315 /* FYString.m */; };
-		126D396C1F4E584D002A9315 /* FYString.m in Sources */ = {isa = PBXBuildFile; fileRef = 126D38AC1F4E584C002A9315 /* FYString.m */; };
-		126D396D1F4E584D002A9315 /* FYString.m in Sources */ = {isa = PBXBuildFile; fileRef = 126D38AC1F4E584C002A9315 /* FYString.m */; };
+		126D396B1F4E584D002A9315 /* NSString+FYString.m in Sources */ = {isa = PBXBuildFile; fileRef = 126D38AC1F4E584C002A9315 /* NSString+FYString.m */; };
+		126D396C1F4E584D002A9315 /* NSString+FYString.m in Sources */ = {isa = PBXBuildFile; fileRef = 126D38AC1F4E584C002A9315 /* NSString+FYString.m */; };
+		126D396D1F4E584D002A9315 /* NSString+FYString.m in Sources */ = {isa = PBXBuildFile; fileRef = 126D38AC1F4E584C002A9315 /* NSString+FYString.m */; };
 		126D396E1F4E584D002A9315 /* FYTabBar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 126D38AE1F4E584C002A9315 /* FYTabBar.plist */; };
 		126D396F1F4E584D002A9315 /* FYTabBar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 126D38AE1F4E584C002A9315 /* FYTabBar.plist */; };
 		126D39701F4E584D002A9315 /* FYTabBar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 126D38AE1F4E584C002A9315 /* FYTabBar.plist */; };
@@ -327,8 +327,8 @@
 		126D38A61F4E584C002A9315 /* UIScrollViewDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIScrollViewDoc.m; sourceTree = "<group>"; };
 		126D38A81F4E584C002A9315 /* FYSQL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYSQL.h; sourceTree = "<group>"; };
 		126D38A91F4E584C002A9315 /* FYSQL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYSQL.m; sourceTree = "<group>"; };
-		126D38AB1F4E584C002A9315 /* FYString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYString.h; sourceTree = "<group>"; };
-		126D38AC1F4E584C002A9315 /* FYString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYString.m; sourceTree = "<group>"; };
+		126D38AB1F4E584C002A9315 /* NSString+FYString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+FYString.h"; sourceTree = "<group>"; };
+		126D38AC1F4E584C002A9315 /* NSString+FYString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+FYString.m"; sourceTree = "<group>"; };
 		126D38AE1F4E584C002A9315 /* FYTabBar.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = FYTabBar.plist; sourceTree = "<group>"; };
 		126D38AF1F4E584C002A9315 /* FYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYTabBarController.h; sourceTree = "<group>"; };
 		126D38B01F4E584C002A9315 /* FYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYTabBarController.m; sourceTree = "<group>"; };
@@ -655,8 +655,8 @@
 		126D38AA1F4E584C002A9315 /* FY_String */ = {
 			isa = PBXGroup;
 			children = (
-				126D38AB1F4E584C002A9315 /* FYString.h */,
-				126D38AC1F4E584C002A9315 /* FYString.m */,
+				126D38AB1F4E584C002A9315 /* NSString+FYString.h */,
+				126D38AC1F4E584C002A9315 /* NSString+FYString.m */,
 			);
 			path = FY_String;
 			sourceTree = "<group>";
@@ -1233,7 +1233,7 @@
 				126D399E1F4E584D002A9315 /* UITextField+FYTextField.m in Sources */,
 				B06313D51F4C16EC003EC043 /* main.m in Sources */,
 				126D39B01F4E584D002A9315 /* UIViewControllerDoc.m in Sources */,
-				126D396B1F4E584D002A9315 /* FYString.m in Sources */,
+				126D396B1F4E584D002A9315 /* NSString+FYString.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1262,7 +1262,7 @@
 				126D39091F4E584D002A9315 /* View+FYAdditions.m in Sources */,
 				126D38FD1F4E584D002A9315 /* FYViewAttribute.m in Sources */,
 				126D39C01F4E584D002A9315 /* UIGestureRecognizer+FYGestureRecognizer.m in Sources */,
-				126D396C1F4E584D002A9315 /* FYString.m in Sources */,
+				126D396C1F4E584D002A9315 /* NSString+FYString.m in Sources */,
 				126D39841F4E584D002A9315 /* FYSingle.m in Sources */,
 				126D39481F4E584D002A9315 /* NSArray+FYArray.m in Sources */,
 				126D39571F4E584D002A9315 /* KVC.m in Sources */,
@@ -1338,7 +1338,7 @@
 				126D390A1F4E584D002A9315 /* View+FYAdditions.m in Sources */,
 				126D38FE1F4E584D002A9315 /* FYViewAttribute.m in Sources */,
 				126D39C11F4E584D002A9315 /* UIGestureRecognizer+FYGestureRecognizer.m in Sources */,
-				126D396D1F4E584D002A9315 /* FYString.m in Sources */,
+				126D396D1F4E584D002A9315 /* NSString+FYString.m in Sources */,
 				126D39851F4E584D002A9315 /* FYSingle.m in Sources */,
 				126D39491F4E584D002A9315 /* NSArray+FYArray.m in Sources */,
 				126D39581F4E584D002A9315 /* KVC.m in Sources */,
@@ -1522,6 +1522,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MZE84VL8YP;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = FYAPP/FYAPP/FYAPP.pch;
 				INFOPLIST_FILE = FYAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1537,6 +1538,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = MZE84VL8YP;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = FYAPP/FYAPP/FYAPP.pch;
 				INFOPLIST_FILE = FYAPP/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
