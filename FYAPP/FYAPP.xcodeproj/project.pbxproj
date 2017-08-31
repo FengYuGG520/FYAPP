@@ -85,6 +85,8 @@
 		120689761F543A37009E353F /* UIBezierPath+FYBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 1206892D1F543A37009E353F /* UIBezierPath+FYBezierPath.m */; };
 		120689771F543A37009E353F /* UIGestureRecognizer+FYGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1206892F1F543A37009E353F /* UIGestureRecognizer+FYGestureRecognizer.m */; };
 		1206897B1F543A3E009E353F /* FYBaseController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1206897A1F543A3E009E353F /* FYBaseController.m */; };
+		123DA34F1F57CD5800A5712E /* FYFPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 123DA34E1F57CD5800A5712E /* FYFPS.m */; };
+		123DA3521F57CDBD00A5712E /* UIWindow+FPS.m in Sources */ = {isa = PBXBuildFile; fileRef = 123DA3511F57CDBD00A5712E /* UIWindow+FPS.m */; };
 		94562EB7CB82C64AA2D73B8F /* libPods-FYAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C57D7EC7B40C6F500838890C /* libPods-FYAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -239,6 +241,10 @@
 		120689311F543A37009E353F /* FYAPP.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYAPP.pch; sourceTree = "<group>"; };
 		120689791F543A3E009E353F /* FYBaseController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYBaseController.h; sourceTree = "<group>"; };
 		1206897A1F543A3E009E353F /* FYBaseController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYBaseController.m; sourceTree = "<group>"; };
+		123DA34D1F57CD5800A5712E /* FYFPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYFPS.h; sourceTree = "<group>"; };
+		123DA34E1F57CD5800A5712E /* FYFPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYFPS.m; sourceTree = "<group>"; };
+		123DA3501F57CDBD00A5712E /* UIWindow+FPS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+FPS.h"; sourceTree = "<group>"; };
+		123DA3511F57CDBD00A5712E /* UIWindow+FPS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+FPS.m"; sourceTree = "<group>"; };
 		6E8E4FD7648DC421B2F82940 /* Pods-FYAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-FYAPP/Pods-FYAPP.release.xcconfig"; sourceTree = "<group>"; };
 		C57D7EC7B40C6F500838890C /* libPods-FYAPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FYAPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A50ADC8A494629CD363D28 /* Pods-FYAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FYAPP/Pods-FYAPP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -304,6 +310,7 @@
 		1206888F1F543A37009E353F /* FYAPP */ = {
 			isa = PBXGroup;
 			children = (
+				123DA34C1F57CCE100A5712E /* FY_FPS */,
 				120688901F543A37009E353F /* FY_AutoLayout */,
 				120688A81F543A37009E353F /* FY_Block */,
 				120688AA1F543A37009E353F /* FY_CollectionView */,
@@ -654,6 +661,17 @@
 			path = Base;
 			sourceTree = "<group>";
 		};
+		123DA34C1F57CCE100A5712E /* FY_FPS */ = {
+			isa = PBXGroup;
+			children = (
+				123DA34D1F57CD5800A5712E /* FYFPS.h */,
+				123DA34E1F57CD5800A5712E /* FYFPS.m */,
+				123DA3501F57CDBD00A5712E /* UIWindow+FPS.h */,
+				123DA3511F57CDBD00A5712E /* UIWindow+FPS.m */,
+			);
+			path = FY_FPS;
+			sourceTree = "<group>";
+		};
 		38BF7F24B0F736ADD1F3677F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -798,6 +816,7 @@
 			files = (
 				120689441F543A37009E353F /* FYAPPBarChartView.m in Sources */,
 				1206893F1F543A37009E353F /* FYButton.m in Sources */,
+				123DA34F1F57CD5800A5712E /* FYFPS.m in Sources */,
 				120689771F543A37009E353F /* UIGestureRecognizer+FYGestureRecognizer.m in Sources */,
 				1206896E1F543A37009E353F /* FYSocket.m in Sources */,
 				120689581F543A37009E353F /* UIScrollView+FYScrollView.m in Sources */,
@@ -837,6 +856,7 @@
 				1206895D1F543A37009E353F /* FYTabBarController.m in Sources */,
 				1206893B1F543A37009E353F /* ViewController+FYAdditions.m in Sources */,
 				120689361F543A37009E353F /* FYViewAttribute.m in Sources */,
+				123DA3521F57CDBD00A5712E /* UIWindow+FPS.m in Sources */,
 				1206895A1F543A37009E353F /* FYSQL.m in Sources */,
 				1206887A1F54367E009E353F /* AppDelegate.m in Sources */,
 				1206894E1F543A37009E353F /* FYModel.m in Sources */,

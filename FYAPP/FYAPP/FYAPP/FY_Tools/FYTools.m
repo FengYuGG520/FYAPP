@@ -69,4 +69,8 @@
     return fy_time;// 返回 FY_Time
 }
 
++ (void)fy_fpsShow {
+    [[FYFPS sharedFPSIndicator] show];
+}
+
 @end

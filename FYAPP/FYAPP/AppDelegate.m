@@ -8,13 +8,22 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    self.window = [UIWindow new];
+    
+    [self.window makeKeyAndVisible];
+    
+#if defined(DEBUG) || defined(_DEBUG)
+    // 这个方法必须在 makeKeyAndVisible 后面调用才能看见.
+    [FYTools fy_fpsShow];
+#endif
+    
+    self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
     return YES;
 }
 
 - (void)applicationWillTerminate:(UIApplication *)application {
-    // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
-    // Saves changes in the application's managed object context before the application terminates.
+    
     [self saveContext];
 }
 

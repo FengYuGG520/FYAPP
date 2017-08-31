@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 #import "FY_Enum.h"
+#import "FYFPS.h"
+#import "UIWindow+FPS.h"
 
 #define fy_UISetLen(len) [FYTools fy_lenInUI:(len)]
 
@@ -43,5 +45,7 @@
  @return 当前时间结构体
  */
 + (FY_Time)fy_timeCurrent;
+
++ (void)fy_fpsShow;
 
 @end
