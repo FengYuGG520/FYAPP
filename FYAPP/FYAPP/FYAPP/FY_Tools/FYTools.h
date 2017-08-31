@@ -9,6 +9,8 @@
 #import <UIKit/UIKit.h>
 #import "FY_Enum.h"
 
+#define fy_UISetLen(len) [FYTools fy_lenInUI:(len)]
+
 @interface FYTools : NSObject
 
 /**
@@ -17,6 +19,14 @@
  @return 当前系统版本
  */
 + (CGFloat)fy_iOSVersion;
+
+/**
+ 根据 UI 给的相对于 4.7 英寸屏幕切的尺寸, 返回相对当前屏幕的尺寸
+ 
+ @param len UI 给的相对于 4.7 英寸屏幕切的尺寸
+ @return 相对当前屏幕的尺寸
+ */
++ (CGFloat)fy_lenInUI:(CGFloat)len;
 
 /**
  获得某文件的沙盒全路径, 参数1: 该文件名 参数2: 存到沙盒指定地方的枚举项

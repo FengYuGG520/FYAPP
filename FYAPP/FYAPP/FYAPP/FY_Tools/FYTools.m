@@ -14,6 +14,10 @@
     return [[UIDevice currentDevice].systemVersion floatValue];
 }
 
++ (CGFloat)fy_lenInUI:(CGFloat)len {
+    return len * [UIScreen fy_screenWith] / 375.00;
+}
+
 + (NSString *)fy_path:(NSString *)path FY_Path:(FY_Path)FY_Path_Enum {
     // 根据枚举项得到沙盒路径
     NSString *pathStr = FY_Path_Enum == FY_Path_Caches ? @"/Library/Caches/" : FY_Path_Enum == FY_Path_Documents ? @"/Documents/" : FY_Path_Enum == FY_Path_tmp ? @"/tmp/" : @"/Library/Preferences/";
