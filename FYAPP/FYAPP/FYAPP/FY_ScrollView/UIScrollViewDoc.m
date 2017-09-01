@@ -5,8 +5,10 @@
 // 相关属性:
 // pagingEbable    分页
 // contentSize     滚动范围
-// contentInset    文本缩进
+// contentInset    文本缩进 (有穿透效果)
 // contentOffset   已经滚动的偏移值
+// automaticallyAdjustsScrollViewInsets 自动缩进 (当 C 里面只有一个 scrollView 或其子类的视图的时候, 这个默认是 YES, 需设置 NO, 就会被导航条盖住了)
+
 @end
 @implementation UIScrollViewDoc
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView {}// 正在滚动
@@ -23,3 +25,16 @@
 - (BOOL)scrollViewShouldScrollToTop:(UIScrollView *)scrollView {return 0;}// 默认 YES
 - (void)scrollViewDidScrollToTop:(UIScrollView *)scrollView {}
 @end
+
+//    scrollView 无法滚动原因有:
+//    1. contentSize 没有设置
+//    2. contentSize 设置的比 UIScrollView 的宽和高小
+//    3. scrollEnable 属性为NO
+//    4. userInteractionEnable 属性为NO
+//    5. UIScrollView 所在的父容器的 userInteractionEnable 属性变成了 NO
+
+//    UIScrollView 滚动的原理:
+//    改变的 scrollView 的 Bounds 中的 x, y
+//
+//    UIScrollView 缩放的原理:
+//    改变的其实是被缩放的那个视图的 transform

@@ -9,3 +9,6 @@
 #import "FYConstraintMaker.h"
 #import "FYLayoutConstraint.h"
 #import "NSLayoutConstraint+FYDebugAdditions.h"
+
+// 乘以一个数
+// make.width.equalTo(self.view).multipliedBy(0.5);
