@@ -91,4 +91,11 @@
  */
 - (void)fy_radius:(CGFloat)radius;
 
+/**
+ 设置视图的模糊程度, 相比 alpha 不会影响性能, alpha 需要计算
+
+ @param opacity 模糊程度
+ */
+- (void)fy_opacity:(CGFloat)opacity;
+
 @end

@@ -154,4 +154,11 @@
     self.layer.cornerRadius = radius;
 }
 
+- (void)fy_opacity:(CGFloat)opacity {
+    // 设置视图的模糊程度
+    // 在 cell 里面对 cell.contentView 或者其子视图设置视图的透明度不会影响性能
+    // 而设置 alpha 需要计算影响性能 (子视图颜色 = alpha * 子视图颜色 + (1 - alpha) * 父视图颜色)
+    self.layer.opacity = opacity;
+}
+
 @end
