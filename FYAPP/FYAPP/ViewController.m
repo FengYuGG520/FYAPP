@@ -1,5 +1,7 @@
 #import "ViewController.h"
 
+#import "BlockDoc.h"
+
 @interface ViewController ()
 
 @end
