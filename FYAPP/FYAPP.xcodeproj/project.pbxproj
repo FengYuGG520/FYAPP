@@ -88,6 +88,7 @@
 		123DA4431F592B2500A5712E /* NSTimer+FYTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 123DA3F61F592B2500A5712E /* NSTimer+FYTimer.m */; };
 		123DA4441F592B2500A5712E /* UIBezierPath+FYBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 123DA3F81F592B2500A5712E /* UIBezierPath+FYBezierPath.m */; };
 		123DA4451F592B2500A5712E /* UIGestureRecognizer+FYGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 123DA3FA1F592B2500A5712E /* UIGestureRecognizer+FYGestureRecognizer.m */; };
+		128312171F5A322C00548C3C /* UIResponder+FYResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 128312161F5A322C00548C3C /* UIResponder+FYResponder.m */; };
 		94562EB7CB82C64AA2D73B8F /* libPods-FYAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C57D7EC7B40C6F500838890C /* libPods-FYAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -247,6 +248,8 @@
 		123DA3FA1F592B2500A5712E /* UIGestureRecognizer+FYGestureRecognizer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+FYGestureRecognizer.m"; sourceTree = "<group>"; };
 		123DA3FB1F592B2500A5712E /* FYAPP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYAPP.h; sourceTree = "<group>"; };
 		123DA3FC1F592B2500A5712E /* FYAPP.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYAPP.pch; sourceTree = "<group>"; };
+		128312151F5A322C00548C3C /* UIResponder+FYResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FYResponder.h"; sourceTree = "<group>"; };
+		128312161F5A322C00548C3C /* UIResponder+FYResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FYResponder.m"; sourceTree = "<group>"; };
 		6E8E4FD7648DC421B2F82940 /* Pods-FYAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-FYAPP/Pods-FYAPP.release.xcconfig"; sourceTree = "<group>"; };
 		C57D7EC7B40C6F500838890C /* libPods-FYAPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FYAPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A50ADC8A494629CD363D28 /* Pods-FYAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FYAPP/Pods-FYAPP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -321,6 +324,7 @@
 		123DA3541F592B2500A5712E /* FYAPP */ = {
 			isa = PBXGroup;
 			children = (
+				128312141F5A320900548C3C /* FY_Responder */,
 				123DA3551F592B2500A5712E /* FY_AutoLayout */,
 				123DA36D1F592B2500A5712E /* FY_Block */,
 				123DA3701F592B2500A5712E /* FY_CollectionView */,
@@ -675,6 +679,15 @@
 			path = FY_Visual;
 			sourceTree = "<group>";
 		};
+		128312141F5A320900548C3C /* FY_Responder */ = {
+			isa = PBXGroup;
+			children = (
+				128312151F5A322C00548C3C /* UIResponder+FYResponder.h */,
+				128312161F5A322C00548C3C /* UIResponder+FYResponder.m */,
+			);
+			path = FY_Responder;
+			sourceTree = "<group>";
+		};
 		38BF7F24B0F736ADD1F3677F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -889,6 +902,7 @@
 				123DA41F1F592B2500A5712E /* NSObject+FYModel.m in Sources */,
 				123DA4401F592B2500A5712E /* UIViewControllerDoc.m in Sources */,
 				123DA40D1F592B2500A5712E /* FYFPS.m in Sources */,
+				128312171F5A322C00548C3C /* UIResponder+FYResponder.m in Sources */,
 				123DA43D1F592B2500A5712E /* NSURLRequest+FYURLRequest.m in Sources */,
 				123DA4431F592B2500A5712E /* NSTimer+FYTimer.m in Sources */,
 				123DA41E1F592B2500A5712E /* NSObject+FYArray.m in Sources */,

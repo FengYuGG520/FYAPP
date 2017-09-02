@@ -1,4 +1,5 @@
 #import "AppDelegate.h"
+#import <UserNotifications/UserNotifications.h>
 
 @interface AppDelegate ()
 
@@ -22,6 +23,35 @@
     
     self.window.rootViewController = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateInitialViewController];
     return YES;
+}
+
+- (void)openURL {
+    UIApplication *application = [UIApplication sharedApplication];
+    // 让你的菊花转起来
+    application.networkActivityIndicatorVisible = YES;
+    // 打开网页
+    [application openURL:[NSURL URLWithString:@"http://www.baidu.com"]];
+    // 打电话, 模拟器演示不了
+    [application openURL:[NSURL URLWithString:@"tel://10086"]];
+    [application openURL:[NSURL URLWithString:@"sms://10086"]];
+}
+
+- (void)notification {
+    // iOS10 之前用这个
+    UIApplication *application = [UIApplication sharedApplication];
+    UIUserNotificationSettings *settings = [UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeBadge categories:nil];
+    [application registerUserNotificationSettings:settings];
+    
+    // #import <UserNotifications/UserNotifications.h>
+    if ([[UIDevice currentDevice].systemVersion floatValue] >= 10.0) {
+        UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        [center requestAuthorizationWithOptions:UNAuthorizationOptionBadge completionHandler:^(BOOL granted, NSError * _Nullable error) {
+            // 参数1: 如果点的是同意, 那么 granted 的值为 YES, 如果点的不同意, 值为 NO
+            // 参数2: 如果运行中出错, 那么就返回 error 这个错误对象
+            NSLog(@"当用户点完同意或者拒绝后会来执行这个block  %d", granted);
+            // 判断用户是否开启通知, 如果没有开启, 则提示用户某些功能不能用让它去设置里开启
+        }];
+    }
 }
 
 // 应用程序即将关闭时调用的方法
