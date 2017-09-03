@@ -56,14 +56,15 @@
         const char *name = property_getName(property);
         // c字符串转成oc字符串
         NSString *nameStr = [[NSString alloc] initWithUTF8String:name];
+        
         // 4. 获取属性的值
+        if ([self valueForKey:nameStr]) {
+            // 通过kvc取值
+            NSString *value = [self valueForKey:nameStr];
+            NSDictionary *dic = @{nameStr:value};
+            [arr addObject:dic];
+        }
         
-        // 通过kvc取值
-        NSString *value = [self valueForKey:nameStr];
-        
-        NSDictionary *dic = @{nameStr:value};
-        
-        [arr addObject:dic];
     }
     
     // C对象都需要手动释放(一般带*需要释放)
