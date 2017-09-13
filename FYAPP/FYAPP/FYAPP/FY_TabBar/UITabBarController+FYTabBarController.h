@@ -28,4 +28,9 @@
  */
 - (void)fy_tabSelTxtColor:(UIColor *)color;
 
+/**
+ 去掉tabbarItem被选中时的背景灰色
+ */
+- (void)fy_tabSelectionCut;
+
 @end

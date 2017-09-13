@@ -31,4 +31,8 @@
     if (color) self.tabBar.tintColor = color;
 }
 
+- (void)fy_tabSelectionCut {
+    self.tabBar.selectionIndicatorImage = [UIImage new];
+}
+
 @end
