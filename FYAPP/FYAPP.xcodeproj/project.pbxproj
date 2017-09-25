@@ -89,6 +89,9 @@
 		123DA4441F592B2500A5712E /* UIBezierPath+FYBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 123DA3F81F592B2500A5712E /* UIBezierPath+FYBezierPath.m */; };
 		123DA4451F592B2500A5712E /* UIGestureRecognizer+FYGestureRecognizer.m in Sources */ = {isa = PBXBuildFile; fileRef = 123DA3FA1F592B2500A5712E /* UIGestureRecognizer+FYGestureRecognizer.m */; };
 		128312171F5A322C00548C3C /* UIResponder+FYResponder.m in Sources */ = {isa = PBXBuildFile; fileRef = 128312161F5A322C00548C3C /* UIResponder+FYResponder.m */; };
+		14AEF4931F6A3EF90003743C /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AEF4921F6A3EF90003743C /* UserModel.m */; };
+		14AEF4961F6A3F680003743C /* UserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AEF4951F6A3F680003743C /* UserDataModel.m */; };
+		14AEF4991F6A3FD50003743C /* UserDataListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AEF4981F6A3FD50003743C /* UserDataListModel.m */; };
 		94562EB7CB82C64AA2D73B8F /* libPods-FYAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C57D7EC7B40C6F500838890C /* libPods-FYAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -250,6 +253,12 @@
 		123DA3FC1F592B2500A5712E /* FYAPP.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYAPP.pch; sourceTree = "<group>"; };
 		128312151F5A322C00548C3C /* UIResponder+FYResponder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+FYResponder.h"; sourceTree = "<group>"; };
 		128312161F5A322C00548C3C /* UIResponder+FYResponder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIResponder+FYResponder.m"; sourceTree = "<group>"; };
+		14AEF4911F6A3EF90003743C /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		14AEF4921F6A3EF90003743C /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		14AEF4941F6A3F680003743C /* UserDataModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataModel.h; sourceTree = "<group>"; };
+		14AEF4951F6A3F680003743C /* UserDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataModel.m; sourceTree = "<group>"; };
+		14AEF4971F6A3FD50003743C /* UserDataListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataListModel.h; sourceTree = "<group>"; };
+		14AEF4981F6A3FD50003743C /* UserDataListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataListModel.m; sourceTree = "<group>"; };
 		6E8E4FD7648DC421B2F82940 /* Pods-FYAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-FYAPP/Pods-FYAPP.release.xcconfig"; sourceTree = "<group>"; };
 		C57D7EC7B40C6F500838890C /* libPods-FYAPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FYAPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A50ADC8A494629CD363D28 /* Pods-FYAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FYAPP/Pods-FYAPP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -293,6 +302,7 @@
 				120688791F54367E009E353F /* AppDelegate.m */,
 				1206887B1F54367E009E353F /* ViewController.h */,
 				1206887C1F54367E009E353F /* ViewController.m */,
+				14AEF4901F6A3E4E0003743C /* Model */,
 				120689781F543A3E009E353F /* Base */,
 				1206887E1F54367E009E353F /* Main.storyboard */,
 				120688841F54367E009E353F /* Assets.xcassets */,
@@ -688,6 +698,19 @@
 			path = FY_Responder;
 			sourceTree = "<group>";
 		};
+		14AEF4901F6A3E4E0003743C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				14AEF4911F6A3EF90003743C /* UserModel.h */,
+				14AEF4921F6A3EF90003743C /* UserModel.m */,
+				14AEF4941F6A3F680003743C /* UserDataModel.h */,
+				14AEF4951F6A3F680003743C /* UserDataModel.m */,
+				14AEF4971F6A3FD50003743C /* UserDataListModel.h */,
+				14AEF4981F6A3FD50003743C /* UserDataListModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		38BF7F24B0F736ADD1F3677F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -834,14 +857,17 @@
 				123DA4121F592B2500A5712E /* FYAPPBarChartView.m in Sources */,
 				123DA40B1F592B2500A5712E /* FYButton.m in Sources */,
 				123DA4151F592B2500A5712E /* FYAPPSliderController.m in Sources */,
+				14AEF4991F6A3FD50003743C /* UserDataListModel.m in Sources */,
 				123DA4041F592B2500A5712E /* NSLayoutConstraint+FYDebugAdditions.m in Sources */,
 				123DA4301F592B2500A5712E /* FYNetworking.m in Sources */,
 				123DA4241F592B2500A5712E /* Sundry.m in Sources */,
 				123DA4351F592B2500A5712E /* UIButton+FYButton.m in Sources */,
+				14AEF4931F6A3EF90003743C /* UserModel.m in Sources */,
 				123DA4311F592B2500A5712E /* FYSingle.m in Sources */,
 				1206897B1F543A3E009E353F /* FYBaseController.m in Sources */,
 				123DA41B1F592B2500A5712E /* FYClassInfo.m in Sources */,
 				123DA4171F592B2500A5712E /* FYAPPWheelView.m in Sources */,
+				14AEF4961F6A3F680003743C /* UserDataModel.m in Sources */,
 				123DA3FD1F592B2500A5712E /* FYCompositeConstraint.m in Sources */,
 				123DA4361F592B2500A5712E /* UIColor+FYColor.m in Sources */,
 				123DA4231F592B2500A5712E /* StringArrayDictionary.m in Sources */,

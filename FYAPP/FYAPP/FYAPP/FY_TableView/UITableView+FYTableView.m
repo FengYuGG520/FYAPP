@@ -68,6 +68,6 @@
 //    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 //}
 // 或者在返回 cell 里面设置 cell.selectionStyle = UITableViewCellSelectionStyleNone;
-// xib 也可以设置ß
+// xib 也可以设置
 
 @end

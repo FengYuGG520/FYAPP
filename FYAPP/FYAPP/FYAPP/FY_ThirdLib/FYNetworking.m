@@ -18,7 +18,7 @@
         // 实例化Manager
         instance = [[self alloc]init];
         // 告知AFN让他给我返回原始的二进制数据(responseObject), 我自己反序列化
-        instance.responseSerializer = [AFHTTPResponseSerializer serializer];
+//        instance.responseSerializer = [AFHTTPResponseSerializer serializer];
         // 让AFN支持,客户端向服务器发送特殊的二进制, 比如 JSON plist
         instance.requestSerializer = [AFJSONRequestSerializer serializer];
         // 增加AFN支持的文件类型
