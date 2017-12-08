@@ -40,6 +40,44 @@
      str = [@"i love you, i" stringByTrimmingCharactersInSet:[NSCharacterSet characterSetWithCharactersInString:@"i"]];
  替换\删除(字符串所有空格)
      str = [@" i love you " stringByReplacingOccurrencesOfString:@" " withString:@""];
+ 
+ 1.截取字符串
+ 
+ NSString*string =@"sdfsfsfsAdfsdf";
+ string = [string substringToIndex:7];//截取掉下标7之后的字符串
+ NSLog(@"截取的值为：%@",string);
+ [string substringFromIndex:2];//截取掉下标2之前的字符串
+ NSLog(@"截取的值为：%@",string);
+ 
+ 
+ 2.匹配字符串
+ NSString*string =@"sdfsfsfsAdfsdf";
+ NSRangerange = [stringrangeOfString:@"f"];//匹配得到的下标
+ NSLog(@"rang:%@",NSStringFromRange(range));
+ string = [string substringWithRange:range];//截取范围类的字符串
+ NSLog(@"截取的值为：%@",string);
+ 
+ 
+ 3.分隔字符串
+ NSString*string =@"sdfsfsfsAdfsdf";
+ 
+ NSArray *array = [string componentsSeparatedByString:@"A"]; //从字符A中分隔成2个元素的数组
+ NSLog(@"array:%@",array); //结果是adfsfsfs和dfsdf
+ 
+ Copy
+ // 系统级别
+ UIPasteboard *pasteboard = [UIPasteboard generalPasteboard];
+ pasteboard.string = self.pTextField.text;
+ NSLog(@"\r\n====>输入框内容为:%@\r\n====>剪切板内容为:%@",self.pTextField.text,pasteboard.string);
+ // 应用内单独使用时
+ NSString * strBuildID = [[[NSBundle mainBundle]infoDictionary]objectForKey:@"CFBundleIdentifier"];
+ UIPasteboard * myPasteboard = [UIPasteboard pasteboardWithName:strBuildID create:YES];
+ myPasteboard.string = @"复制测试数据";
+ // 内部使用
+ NSString * strBuildID = [[[NSBundle mainBundle]infoDictionary]objectForKey:@"CFBundleIdentifier"];
+ UIPasteboard * myPasteboard = [UIPasteboard pasteboardWithName:strBuildID create:NO];
+ self.pLabel.text = myPasteboard.string;
+ 
  */
 
 #pragma mark - 可变字符串

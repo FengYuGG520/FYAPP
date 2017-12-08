@@ -4,33 +4,94 @@
 
 #import "UserModel.h"
 
+#import <AVFoundation/AVFoundation.h>
+
 @interface ViewController ()
+
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    BOOL LightOn;
+    AVCaptureDevice *device;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSDictionary *parameters = @{};
+    UIButton *btn = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     
-    [FYNetworking.sharedNetworkTool fy_GETURLString:@"https://api.o2ovip.com/index/newProdList/1/1/10" parameters:parameters success:^(id responseObject) {
-        
-        NSLog(@"responseObject -> %@", responseObject);
-        
-        UserModel *dic = [NSDictionary fy_modelDictionaryWithClass:UserModel.class json:responseObject];
-        UserModel *dic1 = [UserModel fy_modelWithDictionary:responseObject];
-        UserModel *dic2 = [UserModel fy_modelWithJSON:responseObject];
-        
-        NSLog(@"%@", dic.data.list[0].image);
-        NSLog(@"%@", dic1.data.list[0].image);
-        NSLog(@"%@", dic2.data.list[0].image);
-    } faile:^(NSError *error) {
-        
-        NSLog(@"error -> %@", error);
-    }];
+    [btn setFrame:CGRectMake(100, 150, 100, 80)];
+    
+    btn.backgroundColor = [UIColor redColor];
+    
+    [btn addTarget:self action:@selector(btnClicked) forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:btn];
+    
+    [self initUIIIUI];
+    
+    
 }
+
+- (void)initUIIIUI{
+    
+    device = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    
+    if (![device hasTorch]) {
+        
+        //无手电筒
+        
+    }
+    
+    LightOn = NO;
+    
+}
+
+-(void)btnClicked
+
+{
+    
+    LightOn = !LightOn;
+    
+    if (LightOn) {
+        
+        [self turnOn];
+        
+    }else{
+        
+        [self turnOff];
+        
+    }
+    
+}
+
+
+
+-(void) turnOn
+
+{
+    
+    [device lockForConfiguration:nil];
+    
+    [device setTorchMode:AVCaptureTorchModeOn];
+    
+    [device unlockForConfiguration];
+    
+}
+
+-(void) turnOff
+
+{
+    
+    [device lockForConfiguration:nil];
+    
+    [device setTorchMode: AVCaptureTorchModeOff];
+    
+    [device unlockForConfiguration];
+    
+}
+
 
 
 @end

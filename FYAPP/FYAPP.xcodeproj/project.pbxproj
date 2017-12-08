@@ -92,6 +92,7 @@
 		14AEF4931F6A3EF90003743C /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AEF4921F6A3EF90003743C /* UserModel.m */; };
 		14AEF4961F6A3F680003743C /* UserDataModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AEF4951F6A3F680003743C /* UserDataModel.m */; };
 		14AEF4991F6A3FD50003743C /* UserDataListModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 14AEF4981F6A3FD50003743C /* UserDataListModel.m */; };
+		1B196A0C1F789A19008149E4 /* FYTableViewVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B196A0B1F789A19008149E4 /* FYTableViewVC.m */; };
 		94562EB7CB82C64AA2D73B8F /* libPods-FYAPP.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C57D7EC7B40C6F500838890C /* libPods-FYAPP.a */; };
 /* End PBXBuildFile section */
 
@@ -259,6 +260,8 @@
 		14AEF4951F6A3F680003743C /* UserDataModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataModel.m; sourceTree = "<group>"; };
 		14AEF4971F6A3FD50003743C /* UserDataListModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserDataListModel.h; sourceTree = "<group>"; };
 		14AEF4981F6A3FD50003743C /* UserDataListModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserDataListModel.m; sourceTree = "<group>"; };
+		1B196A0A1F789A18008149E4 /* FYTableViewVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FYTableViewVC.h; sourceTree = "<group>"; };
+		1B196A0B1F789A19008149E4 /* FYTableViewVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FYTableViewVC.m; sourceTree = "<group>"; };
 		6E8E4FD7648DC421B2F82940 /* Pods-FYAPP.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYAPP.release.xcconfig"; path = "Pods/Target Support Files/Pods-FYAPP/Pods-FYAPP.release.xcconfig"; sourceTree = "<group>"; };
 		C57D7EC7B40C6F500838890C /* libPods-FYAPP.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FYAPP.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2A50ADC8A494629CD363D28 /* Pods-FYAPP.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FYAPP.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FYAPP/Pods-FYAPP.debug.xcconfig"; sourceTree = "<group>"; };
@@ -302,6 +305,8 @@
 				120688791F54367E009E353F /* AppDelegate.m */,
 				1206887B1F54367E009E353F /* ViewController.h */,
 				1206887C1F54367E009E353F /* ViewController.m */,
+				1B196A0A1F789A18008149E4 /* FYTableViewVC.h */,
+				1B196A0B1F789A19008149E4 /* FYTableViewVC.m */,
 				14AEF4901F6A3E4E0003743C /* Model */,
 				120689781F543A3E009E353F /* Base */,
 				1206887E1F54367E009E353F /* Main.storyboard */,
@@ -762,7 +767,7 @@
 				TargetAttributes = {
 					120688711F54367E009E353F = {
 						CreatedOnToolsVersion = 8.3.3;
-						DevelopmentTeam = MZE84VL8YP;
+						DevelopmentTeam = FS9QQ7PZM7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -926,6 +931,7 @@
 				123DA4211F592B2500A5712E /* FileManger.m in Sources */,
 				123DA43B1F592B2500A5712E /* NSURL+FYURL.m in Sources */,
 				123DA41F1F592B2500A5712E /* NSObject+FYModel.m in Sources */,
+				1B196A0C1F789A19008149E4 /* FYTableViewVC.m in Sources */,
 				123DA4401F592B2500A5712E /* UIViewControllerDoc.m in Sources */,
 				123DA40D1F592B2500A5712E /* FYFPS.m in Sources */,
 				128312171F5A322C00548C3C /* UIResponder+FYResponder.m in Sources */,
@@ -1053,7 +1059,7 @@
 			baseConfigurationReference = F2A50ADC8A494629CD363D28 /* Pods-FYAPP.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MZE84VL8YP;
+				DEVELOPMENT_TEAM = FS9QQ7PZM7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = FYAPP/FYAPP/FYAPP.pch;
 				INFOPLIST_FILE = FYAPP/Info.plist;
@@ -1069,7 +1075,7 @@
 			baseConfigurationReference = 6E8E4FD7648DC421B2F82940 /* Pods-FYAPP.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = MZE84VL8YP;
+				DEVELOPMENT_TEAM = FS9QQ7PZM7;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = FYAPP/FYAPP/FYAPP.pch;
 				INFOPLIST_FILE = FYAPP/Info.plist;
