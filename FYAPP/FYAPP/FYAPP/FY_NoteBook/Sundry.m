@@ -40,6 +40,11 @@
  *   sudo chown -hR root:wheel Contents
  */
 
+#pragma mark - 解决 macos Sierra 系统「安全性与隐私」设置中没有任何来源选项问题
+/**
+ *   终端:  sudo spctl --master-disable
+ */
+
 #pragma mark - 4个对象方法
 /**
  *   A.判断一个类是否有某个对象方法有两种判断方式
