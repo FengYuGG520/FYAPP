@@ -1,3 +1,6 @@
+#pragma mark - Apple Configurator 2 获得IPA包
+// /Users/shang/Library/Group Containers/K36BKF7T3D.group.com.apple.configurator/Library/Caches/Assets/TemporaryItems/MobileApps
+
 #pragma mark - iOS 适配
 // 适配主要是在两个方面进行的
 
