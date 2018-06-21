@@ -16,6 +16,7 @@
     AVCaptureDevice *device;
 }
 
+// 时间过的真快2018.06.21
 - (void)viewDidLoad {
     [super viewDidLoad];
     
