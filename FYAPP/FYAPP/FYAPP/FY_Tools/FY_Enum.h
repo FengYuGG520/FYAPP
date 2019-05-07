@@ -36,7 +36,7 @@ typedef enum {
     FY_Path_Caches = 0,     // 缓存
     FY_Path_Documents,      // 文档
     FY_Path_tmp,            // 临时
-    FY_Path_Preferences,    // 首选
+    FY_Path_Preferences,    // 配置
 } FY_Path;
 
 /**
