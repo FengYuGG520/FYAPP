@@ -6,7 +6,7 @@
  */
 
 #import <UIKit/UIKit.h>
-#import "FY_Enum.h"
+#import "FYEnum.h"
 
 @interface FYAPPWheelView : UIView
 
